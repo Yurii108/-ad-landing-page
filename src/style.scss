@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/src/fonts/FontsFree-Net-SFProDisplay-Semibold.ttf');
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title-25 {
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.title-72 {
+    font-size: 72px;
+    text-align: center;
+    line-height: 89px;
+}
+
+.position-one {
+    &__img-one {
+        display: block;
+        margin: 115px auto 0 auto;
+    }
+
+    &__title {
+        margin-top: 75px;
+    }
+
+    &__img-two {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.position-two {
+    &__img {
+        display: block;
+        margin: 130px auto 0 auto;
+    }
+}
+
+.position-three {
+    &__title {
+        margin-top: 180px;
+    }
+
+    &__img {
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+}
+
+.position-four {
+    &__img {
+        display: block;
+        margin: 120px auto 0 auto;
+    }
+
+    #position-four__img-all {
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+.position-five {
+    &__title {
+        margin-top: 120px;
+        margin-bottom: 37px;
+    }
+
+    &__description {
+        margin-top: 48px;
+        width: 370px;
+    }
+
+    &__divider {
+        margin-top: 48px;
+        background: #000;
+        width: 138px;
+        height: 1px;
+    }
+
+    &__wrraper {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 215px 0 225px;
+    }
+}
+
+.position-six {
+    &__img {
+        display: block;
+        margin: 145px auto 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .position-one {
+        .title-72 {
+            font-size: 42px;
+            line-height: 59px;
+        }
+
+        &__img-two {
+            width: 750px;
+        }
+    }
+
+    .position-two {
+        .title-72 {
+            font-size: 42px;
+            line-height: 59px;
+        }
+
+        &__img {
+            width: 750px;
+        }
+    }
+
+    .position-three {
+        .title-72 {
+            font-size: 42px;
+            line-height: 59px;
+        }
+
+        &__img {
+            width: 750px;
+        }
+    }
+
+    .position-four {
+
+        &__img-one,
+        &__img-two {
+            width: 350px;
+        }
+    }
+
+    .position-five {
+        .title-72 {
+            font-size: 42px;
+            line-height: 59px;
+        }
+    }
+
+    .position-six {
+        &__img {
+            width: 750px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .position-one {
+        &__img-two {
+            width: 450px;
+        }
+    }
+
+    .position-two {
+        .title-72 {
+            font-size: 38px;
+        }
+
+        &__img {
+            width: 520px;
+        }
+    }
+
+    .position-three {
+        &__img {
+            width: 550px;
+        }
+    }
+
+    .position-four {
+
+        &__img-one,
+        &__img-two {
+            width: 250px;
+        }
+    }
+
+    .position-five {
+        &__wrraper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+    }
+
+    .position-six {
+        &__img {
+            width: 550px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .position-one {
+        .title-72 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+
+        &__img-one {
+            width: 150px;
+            margin: 115px auto 0 auto;
+        }
+
+        &__title {
+            margin-top: 75px;
+        }
+
+        &__img-two {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .position-two {
+        .title-72 {
+            font-size: 20px;
+            line-height: 29px;
+        }
+
+        &__img {
+            width: 300px;
+        }
+    }
+
+    .position-three {
+        .title-72 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+
+        &__img {
+            width: 300px;
+        }
+    }
+
+    .position-four {
+        #position-four__img-all {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img-one,
+        &__img-two {
+            width: 300px;
+        }
+    }
+
+    .position-five {
+        .title-25 {
+            font-size: 17px;
+            line-height: 27px;
+        }
+
+        .title-72 {
+            font-size: 24px;
+            line-height: 39px;
+        }
+
+        &__description {
+            width: 250px;
+        }
+    }
+
+    .position-six {
+        &__img {
+            width: 300px;
+        }
+    }
+}
